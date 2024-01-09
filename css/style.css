@@ -1,0 +1,53 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.container img {
+    width: 100px;
+}
+
+.form {
+    max-width: 500px;
+}
+
+.form input, .form select {
+    color: white;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    outline: none;
+    box-shadow: none;
+}
+
+.form input:enabled {
+    border-color: #03FA6E;
+}
+
+.form input:enabled::placeholder {
+    color: white;
+}
+
+#cep, #adress {
+    width: 100%;
+}
+
+#region {
+    width: 100px;
+}
