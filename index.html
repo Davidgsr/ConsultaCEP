@@ -14,42 +14,45 @@
     <div class="container">
         <img src="images/icon.png" alt="icon-dgsr">
         <h1>CONSULTAR CEP</h1>
-        <div class="form">
-            <input type="text" id="cep" placeholder="Digite o CEP que está buscando..." minlength="8" maxlength="8" autocomplete="off" required><br>
-            <input type="text" id="adress" placeholder="Rua" disabled><br>
-            <input type="text" id="city" placeholder="Cidade" disabled>
-            <input type="text" id="neighborhood" placeholder="Bairro" disabled>
-            <select id="region" disabled required data-input>
-                <option selected>Estado</option>
-                <option value="AC">Acre</option>
-                <option value="AL">Alagoas</option>
-                <option value="AP">Amapá</option>
-                <option value="AM">Amazonas</option>
-                <option value="BA">Bahia</option>
-                <option value="CE">Ceará</option>
-                <option value="DF">Distrito Federal</option>
-                <option value="ES">Espírito Santo</option>
-                <option value="GO">Goiás</option>
-                <option value="MA">Maranhão</option>
-                <option value="MT">Mato Grosso</option>
-                <option value="MS">Mato Grosso do Sul</option>
-                <option value="MG">Minas Gerais</option>
-                <option value="PA">Pará</option>
-                <option value="PB">Paraíba</option>
-                <option value="PR">Paraná</option>
-                <option value="PE">Pernambuco</option>
-                <option value="PI">Piauí</option>
-                <option value="RJ">Rio de Janeiro</option>
-                <option value="RN">Rio Grande do Norte</option>
-                <option value="RS">Rio Grande do Sul</option>
-                <option value="RO">Rondônia</option>
-                <option value="RR">Roraima</option>
-                <option value="SC">Santa Catarina</option>
-                <option value="SP">São Paulo</option>
-                <option value="SE">Sergipe</option>
-                <option value="TO">Tocantins</option>
-              </select>
-        </div>
+        <form id="form-Cep">
+            <div class="form">
+                <input type="text" id="cep" placeholder="Digite o CEP que está buscando..." minlength="8" maxlength="8" autocomplete="off" required><br>
+                <input type="text" id="address" placeholder="Rua" data-input disabled><br>
+                <input type="text" id="city" placeholder="Cidade" data-input disabled>
+                <input type="text" id="neighborhood" placeholder="Bairro" data-input disabled>
+                <select id="region" disabled required data-input>
+                    <option selected>Estado</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                  </select><br>
+                  <button class="btn-limpar" onclick="limpa_formulario_cep()">Limpar</button>
+            </div>
+        </form>
     </div>
 </body>
 </html>
